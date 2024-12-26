@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO-APP</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="icon" href="./logo.png" type="image/png">
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-gray-800 min-h-screen flex justify-center items-center font-sans text-gray-100">
+
+    <div id="container" class="h-auto w-full sm:w-3/4 md:w-2/3 lg:w-1/2 flex flex-col items-stretch justify-start gap-6 p-6 sm:p-8 rounded-lg shadow-2xl bg-gray-800 border border-gray-700">
+
+        <!-- Greeting Section -->
+        <div id="greeting-container" class="text-center mb-2">
+            <h2 id="greeting-message" class="text-2xl sm:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+                Welcome back
+            </h2>
+        </div>
+
+        <!-- Main Title -->
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400 mb-6">
+            Get it done
+        </h1>
+
+        <!-- Input Container -->
+        <div class="input-container flex flex-col sm:flex-row items-center gap-4 w-full justify-center mb-6">
+            <input type="text" id="todo-Input" placeholder="Add a new task..." class="p-3 rounded-md w-full bg-gray-700 border-2 border-gray-600 focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-25 transition duration-300 ease-in-out placeholder-gray-400 text-gray-100">
+
+            <button id="add-task-btn" class="w-full sm:w-auto bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold py-3 px-6 rounded-md transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50 shadow-lg">
+                Add Task
+            </button>
+        </div>
+
+        <!-- To-Do List -->
+        <ul id="todo-list" class="w-full flex flex-col gap-3">
+            <!-- Example task item (you can remove this if you're populating dynamically) -->
+            <li class="flex items-center justify-between p-3 bg-gray-700 rounded-md hover:bg-gray-600 transition duration-300 ease-in-out group">
+                <span class="text-gray-100 group-hover:text-white transition duration-300">Example task</span>
+                <button class="text-gray-400 hover:text-red-400 transition duration-300 ease-in-out">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </li>
+        </ul>
+
+    </div>
+
+    <script src="../scripts/user.js"></script>
+</body>
+</html>
